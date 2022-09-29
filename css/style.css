@@ -7,6 +7,20 @@ html {
 *::before {
   box-sizing: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
 
 a {
   display: inline-block;
@@ -20,6 +34,7 @@ li {
 }
 
 body {
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -28,6 +43,12 @@ body {
   max-width: 1722px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header__inner {
@@ -59,4 +80,57 @@ body {
 
 .logo {
   margin: 0 auto;
+}
+
+.home__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.home__link {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-size: cover;
+  background-position: center;
+  min-height: 468px;
+  padding-left: 60px;
+}
+
+.home__link:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.home__link-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  margin-bottom: 18x;
+}
+
+.home__link-text {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 400;
+  width: 696px;
+}
+
+.home__link-btn {
+  width: 223px;
+  height: 54px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 25px;
 }
