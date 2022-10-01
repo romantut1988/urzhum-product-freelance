@@ -85,7 +85,6 @@ body {
 .home__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 
 .home__link {
@@ -133,4 +132,50 @@ body {
   color: #000000;
   cursor: pointer;
   margin-bottom: 25px;
+}
+
+.footer {
+  padding-top: 113px;
+  padding-bottom: 50px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.footer__adres-text {
+  margin-bottom: 38px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__phone {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+
+.footer__mail {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+
+.footer__phone-text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__logo {
+  margin-top: 14px;
+}
+
+.footer__contact-after {
+  margin-top: 149px;
+  font-size: 20px;
+  line-height: 24px;
 }
